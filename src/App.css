@@ -1,0 +1,390 @@
+.product-container {
+  width: 380px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.product-poster {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 22px;
+  margin: 0;
+}
+
+.product-rate-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-rate>strong>span {
+  font-size: 22px;
+}
+
+.product-list-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: whitesmoke;
+}
+
+.home-sd {
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.home-sd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://media.istockphoto.com/id/1408387701/photo/social-media-marketing-digitally-generated-image-engagement.jpg?b=1&s=170667a&w=0&k=20&c=udzg1fifSWZqXvkBJyEAPe2iFGiEi9NxasBCpBAdogo=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.tbl {
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 7.5%;
+  margin-bottom: 5%;
+} 
+
+.intro-container {
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 7.5%;
+  margin-bottom: 5%;
+}
+
+.intro {
+  margin-bottom: 50px;
+}
+
+
+.intro>h1 {
+  color: whitesmoke;
+  font-size: 35px;
+}
+
+.navbar {
+  background-color: rgb(3, 60, 94) !important;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  font-size: 24px !important;
+  cursor: pointer;
+}
+
+.logo-F {
+  color: rgb(22, 163, 228);
+}
+
+.viewProducts {
+  background-color: rgb(3, 60, 94) !important;
+  color: whitesmoke;
+}
+
+.auth-container {
+  /* width: 100%; */
+  height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display:grid;
+  height: 100vh;
+  place-content: center !important;
+  background-image: url('https://st4.depositphotos.com/1026266/21241/i/600/depositphotos_212419682-stock-photo-fingers-touching-tablet-with-cloud.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+  border-radius:20px;
+}
+
+
+.auth-form {
+  border-radius: 5%;
+  width: 400px;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  color:rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.575);
+  border-radius:1.rem;
+}
+
+.auth-form>h2 {
+  text-decoration: underline;
+  margin: 2rem;
+}
+
+.textfield-auth {
+  width: 60%;
+  padding-bottom: 1.5rem !important;
+}
+
+.button-auth {
+  width: 25%;
+  margin-bottom: 1.5rem !important;
+}
+
+.button-auth>span {
+  text-transform: lowercase;
+}
+
+
+
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.add-product-form>h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.product-details {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 2fr 1.25fr;
+  grid-template-areas:
+      "content-1 content-2";
+}
+
+.content-1 {
+  grid-area: content-1;
+  /* background-color: rgb(119, 119, 119); */
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+
+.content-1-box {
+  margin: 1.5rem 3rem;
+}
+
+.content-1-box>img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.content-1-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.content-1-description {
+  width: 75%;
+}
+
+.content-2 {
+  grid-area: content-2;
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.content-2-box {
+  border-radius: 16px;
+  margin: 15px;
+  background-color: white;
+  box-shadow: inset 2px 2px 20px 2px rgb(205 205 205 / 70%);
+}
+
+@media only screen and (max-width: 760px) {
+  .product-details {
+      display: block;
+      grid-gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .content-1-description {
+      width: 100%;
+  }
+}
+
+.totalMonthsBox {
+  border: 1px solid gray;
+  padding: 2px 15px;
+  margin: 0 5px;
+  height: min-content;
+}
+
+.final-price-details>div {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.content-2-box {
+  padding: 2rem;
+}
+
+.content-2-box>h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.final-price-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rent-now {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.rent-now-button {
+  width: 100%;
+}
+
+.checkout-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 2rem 10%;
+  /* border: 1px solid black; */
+  border-radius: 22px;
+  box-shadow: 2px 2px 20px 2px rgb(205 205 205 / 70%);
+}
+
+.checkout-container>h2 {
+  text-decoration: underline;
+}
+
+.checkout-box {
+  width: 100%;
+  height: min-content;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.checkout-box>div {
+  padding: 0.5rem;
+}
+
+.checkout-box-img>img {
+  width: 250px;
+  height: min-content;
+}
+
+.checkout-box-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-form {
+  width: 90%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: white;
+  overflow: auto;
+  margin-bottom: 1.5rem;
+}
+
+.checkout-form>h3 {
+  text-decoration: underline;
+}
+
+.textfield-checkout {
+  width: 80%;
+  padding-bottom: 1.5rem !important;
+
+}
+
+.order-success {
+  background-color: white;
+  margin: 3rem 2rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+  box-shadow: 2px 2px 20px 2px rgb(205 205 205 / 70%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound {
+  width: max-content;
+  object-fit: cover;
+}
+
+.notFound-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
